@@ -1,0 +1,46 @@
+@use 'sass:math';
+@function calculateRem($size){
+    @return math.div($size, 16px) * 1rem;
+}
+
+@mixin fontSize($size){
+    font-size: calculateRem($size);
+}
+
+
+.header{
+    padding: 10px 0;
+    border-bottom: 1px solid #bababa;
+    margin: 10px;
+    display: flex;
+
+    &__logo{
+       text-align: center;
+       justify-content: center;
+    }
+    &__txt{
+        font-family: 'Offside', cursive;
+        @include fontSize(32px);
+    }
+    .menu{
+        &__list{
+            display: flex;
+            margin-left: auto;
+        }
+        &__links{ 
+            position: relative;
+        }
+        &__link{
+            color: #767676;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            padding: 0 15px;
+            letter-spacing: 0.5px;
+            @include fontSize(16px);
+            transition: 0.3s;
+            &:hover{
+                color: #aeaeae;
+            }
+        }
+    }
+}
