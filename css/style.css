@@ -1,35 +1,44 @@
+body {
+  background-color: #0A0a0a;
+}
+
 .header {
   padding: 10px 0;
   border-bottom: 1px solid #bababa;
   margin: 10px;
-  display: flex;
+  display: inline-block;
+  width: 100%;
 }
 .header__logo {
-  text-align: center;
-  justify-content: center;
+  float: left;
 }
 .header__txt {
   font-family: "Offside", cursive;
   font-size: 2rem;
+  color: #f5f5f5;
+}
+.header .menu {
+  float: right;
 }
 .header .menu__list {
   display: flex;
-  margin-left: auto;
-}
-.header .menu__links {
-  position: relative;
+  margin-right: 20px;
+  margin-top: 7.5px;
 }
 .header .menu__link {
-  color: #767676;
+  color: #aeaeae;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   padding: 0 15px;
-  letter-spacing: 0.5px;
   font-size: 1rem;
   transition: 0.3s;
 }
 .header .menu__link:hover {
-  color: #aeaeae;
+  color: #787878;
+}
+
+.main {
+  color: #f5f5f5;
 }
 
 /*# sourceMappingURL=style.css.map */
