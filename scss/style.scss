@@ -13,9 +13,11 @@ body{
 .header{
     padding: 10px 0;
     border-bottom: 1px solid #bababa;
-    margin: 10px;
+    margin: auto;
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
+    width: 60%;
     align-items: center;
     &__txt{
         font-family: 'Offside', cursive;
@@ -43,5 +45,34 @@ body{
 .main{
     color: #f5f5f5;
     margin: 20px;
+    margin: auto;
+    margin-top: 2%;
+    width: 60%;
 }
 
+.footer{
+    padding: 10px 0;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    border-top: 1px solid #bababa;
+    .menu{
+        &__list{
+            display: flex;
+        }
+        &__link{
+            color: #aeaeae;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            padding: 0 15px;
+            @include fontSize(14px);
+            transition: 0.3s;
+            &:hover{
+                color: #787878;
+            }
+        }
+    }
+}

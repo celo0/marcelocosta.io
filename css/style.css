@@ -5,9 +5,11 @@ body {
 .header {
   padding: 10px 0;
   border-bottom: 1px solid #bababa;
-  margin: 10px;
+  margin: auto;
+  margin-top: 2%;
   display: flex;
   justify-content: space-between;
+  width: 60%;
   align-items: center;
 }
 .header__txt {
@@ -33,6 +35,34 @@ body {
 .main {
   color: #f5f5f5;
   margin: 20px;
+  margin: auto;
+  margin-top: 2%;
+  width: 60%;
+}
+
+.footer {
+  padding: 10px 0;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  align-items: center;
+  border-top: 1px solid #bababa;
+}
+.footer .menu__list {
+  display: flex;
+}
+.footer .menu__link {
+  color: #aeaeae;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 0.875rem;
+  transition: 0.3s;
+}
+.footer .menu__link:hover {
+  color: #787878;
 }
 
 /*# sourceMappingURL=style.css.map */
